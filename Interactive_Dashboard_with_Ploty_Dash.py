@@ -83,7 +83,7 @@ def get_pie_chart(entered_site):
                 [Input(component_id='dropdown',component_property='value'),
                 Input(component_id='slider',component_property='value')])
 def scatter(entered_site,payload):
-    filtered_df = spacex_df[spacex_df['Payload Mass (kg)'].between(payload[0],payload[1])]
+    filtered_df = csvdata_df[csvdata_df['Payload Mass (kg)'].between(payload[0],payload[1])]
     # thought reusing filtered_df may cause issues, but tried it out of curiosity and it seems to be working fine
     
     if entered_site=='ALL':
