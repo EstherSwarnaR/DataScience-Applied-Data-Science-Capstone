@@ -55,6 +55,9 @@ app.layout = html.Div(children= [html.H1('Interactive Dashboard',style={'textAli
                                 ]
                        )
 
+#code yet to be refined for proper rendering 
+
+
 #Step4 : callback to render data from Create a Dropdown list of available data options
 #Step5 : callback to render data to Connect a graph - pie chart to the dropdown choice
 @app.callback(Output(component_id='graph-pie-chart', component_property='figure'),
